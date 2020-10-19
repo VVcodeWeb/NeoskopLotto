@@ -1,0 +1,95 @@
+@import "../index.scss";
+.desk {
+  &__header {
+    border-bottom: 1px solid #c3c3c3;
+    color: $text_color;
+    padding: 20px;
+    &__Neoskop {
+      background-color: #7f53ac;
+      background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+      background-size: 100%;
+      background-clip: text;
+      background-repeat: repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+
+    /* Style the rest of the page. */
+    body {
+      background-color: #181123;
+    }
+    span {
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+  &__content {
+    display: flex;
+    padding: 5px 20px;
+    &__numbers {
+      height: 490px;
+      width: 490px;
+    }
+    &__side_bar {
+      border-left: 1px solid #c3c3c3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+      padding: 15px;
+      min-width: 165px;
+      &__buttons {
+        display: flex;
+        flex-direction: column;
+        .white {
+          color: #f0ebeb;
+        }
+      }
+      &__TOGO {
+        color: $text_color;
+      }
+      .purple {
+        color: $purple;
+      }
+      .green {
+        color: $green;
+      }
+    }
+  }
+}
+.disabled_desk {
+  cursor: no-drop;
+}
+
+.MuiDialogTitle-root {
+  padding: 16px 0 !important;
+}
+
+@media screen and (max-width: 730px) {
+  .desk {
+    &__header {
+      margin: 20px 0;
+    }
+    &__content {
+      flex-direction: column;
+      &__side_bar {
+        border-left: none;
+        border-top: 1px solid #c3c3c3;
+        margin-left: 0;
+        margin-top: 10px;
+        h2 {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .desk__content__numbers {
+    height: auto;
+    margin: auto;
+    width: 90%;
+  }
+}

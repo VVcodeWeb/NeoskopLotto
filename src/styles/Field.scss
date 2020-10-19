@@ -1,0 +1,62 @@
+@import "../index.scss";
+.field{
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    color: $number_color;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.disabled{
+  cursor: no-drop;
+  opacity: 0.4;
+  pointer-events:none;
+}
+
+.hit{
+  background-color: $green;
+  transition: all 0.5s ease-out;
+  animation: hitted 1s infinite;
+
+}
+.randomed{
+  background-color: 	#DC143C;
+  opacity: 1;
+  p{
+    color: #fff;
+  }
+
+}
+
+.choosed{
+  background-color: rgba(56, 15, 76, 0.85);
+  p{
+    color: #fff;
+  }
+}
+.pointer-event-none{
+  pointer-events: none;
+}
+
+@keyframes hitted {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.3);
+  }
+}
