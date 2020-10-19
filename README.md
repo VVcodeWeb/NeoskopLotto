@@ -1,3 +1,5 @@
+A simple "6 out of 49" Lotto game. Special for Neoskop.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
